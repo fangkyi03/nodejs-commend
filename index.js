@@ -13,7 +13,6 @@ command.prototype.on = function(name = '',dscp = '',callBack){
 command.prototype.excel = function(){
     const script = process.argv[2]
     const params = process.argv.slice(3)
-
     if (['-h','-help'].indexOf(script) !== -1){
         this.help()
     }else {
